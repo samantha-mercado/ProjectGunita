@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXSNYTG5WG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FXSNYTG5WG');
+</script>
+        <meta charset="UTF-8">
+        <title>Homepage</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+    </head>
+    <body>
+        <div id="preloader"></div>
+        
+            <!--nav start-->
+            <nav class="nav">
+                <a href="index.html"><img class="header-logo" src="images/logo.png"></a>
+                    <div class="nav">
+                        <ul class="navbar">
+                            <li class="dropdown">
+                                <a class = "menubutton now" href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <button class="btn-drop"><a class = "menubutton" href="learn.html"><img class="arrow" src="images/arrow.png"> Learn</button></a>
+                                    <div class="drop-content">
+                                        <a class = "drop-link" href="reading.html">Reading</a>
+                                        <a class = "drop-link" href="writing.html">Writing</a>
+                                        <a class = "drop-link" href="speaking.html">Speaking</a>
+                                        <a class = "drop-link" href="listening.html">Listening</a>
+                                    </div>
+                            </li>
+                            <div class="drop-content">
+                                <a class = "drop-link" href="reading.html">Reading</a>
+                                <a class = "drop-link" href="writing.html">Writing</a>
+                                <a class = "drop-link" href="speaking.html">Speaking</a>
+                                <a class = "drop-link" href="listening.html">Listening</a>
+                            </div>
+                            <li class="dropdown">
+                                <button class="btn-drop"><a class = "menubutton" href="resources.html"><img class="arrow" src="images/arrow.png">Resources</button></a>
+                                    <div class="drop-content">
+                                        <a class = "drop-link" href="videos.html">Videos</a>
+                                        <a class = "drop-link" href="worksheets.html">Worksheets</a>
+                                        <a class = "drop-link" href="ugc.html">Teacher's<br>Corner</a>
+                                    </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class = "menubutton" href="contactus.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+                    </nav>
+                
+            </nav>
+
+            <div class="mobile-nav">
+                <ul class="navbar-mobile">
+                        <ul class="accordion-mobile">
+                            <li>
+                                <input type="radio" name="accordion" id="first">
+                                <label for="first"><a class="drop-link-main now" href="index.html">Home</a></label>
+                            </li> 
+                            <li>
+                                <input type="radio" name="accordion-mobile" id="second">
+                                <label for="second"> <a class="drop-link-main" href="learn.html"><img class="arrow" src="images/arrow.png"> Learn</a></label>
+                                <div class="resources-description"> 
+                                    <a class = "drop-link-accordion" href="reading.html"> Reading</a>
+                                    <a class = "drop-link-accordion" href="writing.html"> Writing</a>
+                                    <a class = "drop-link-accordion" href="speaking.html"> Speaking</a>
+                                    <a class = "drop-link-accordion" href="listening.html"> Listening</a>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="third">
+                                <label for="third"><a class="drop-link-main" href="resources.html"><img class="arrow" src="images/arrow.png"> Resources</a></label>
+                                <div class="resources-description">
+                                    <a class = "drop-link-accordion" href="videos.html"> Videos</a>
+                                    <a class = "drop-link-accordion" href="worksheets.html"> Worksheets</a>
+                                    <a class = "drop-link-accordion" href="ugc.html"> Teacher's Corner</a>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="fourth">
+                                <label for="fourth"><a class="drop-link-main" href="contactus.html">Contact Us</a></label>
+                            </li>
+                            </ul>
+                    </li>
+                
+                </ul>
+            </nav>
+
+            <header class="header-home">
+                
+                <div class="landing-left">
+                        <div class="landing-header">
+                            <h1 class="landing-h1-white">HALINA&#39;T MATUTO</h1>
+                        </div>  
+                        <p class="landing-header-text"> Welcome to Project Gunita! We offer free and accessible educational resources to help improve the literacy skills of young Filipinos.  </p>
+                        <a class = "btn-a" href = learn.html class="btn-div"><img class="lightbulb" src="images/lightbulb.png"> Tara!</button></a>
+                        </div>
+                        
+            <div class="landing-home">
+                
+                <div class="landing-content">
+                    <div class="scroll-container">
+                        <div class="landing-scroll">Scroll to explore!</div>
+                        <img class="scroll-arrow" src="images/scroll.png">
+                    </div>
+                    <!--
+                    <div class="landing-right">
+                        <img class="landing-img" src="images/robyne2.png">
+                    </div>-->
+                </div>
+            </div>
+            <!--nav end-->
+        </header>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+
+            const menu_btn = document.querySelector('.hamburger');
+            const mobile_menu = document.querySelector('.navbar-mobile');
+
+            menu_btn.addEventListener('click', function (){
+                menu_btn.classList.toggle('is-active');
+                mobile_menu.classList.toggle('is-active');
+
+            
+            });
+        </script>
+        <!--COVER PAGE-->
+        <main>
+            
+        <!---COVER PAGE END-->
+        <!--ABOUT PAGE-->
+            <div class="home1">
+                <div class="home1-content">
+                    <div class="home1-left">
+                        <div class="home1-title">What is Project Gunita?</div>
+                        <div class="home1-description">Project Gunita is an educational website featuring videos and worksheets about reading, writing, speaking, and listening that aims to improve the literacy skills of Filipino children, ages 5-7 years old. </div>
+                    </div>
+                    <!--insert intro vid here -->
+                    <div class="home1-right">
+                        <iframe src="https://www.youtube.com/embed/KbKjX7fu27o?si=oxIAlTHV7F9jk5q8" width="960" height="520" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="intro-vid"></iframe>
+                    </div>
+                </div>  
+            </div>
+                    
+            <div class="home-gunita">
+                <div class="gunita-content">
+                <div class="gunita-left">
+                    <div class="gunita-img-div">
+                        <img class="gunita-img" src="images/ugc-homepage-img.png"></div> 
+                </div>
+                <div class="gunita-right">
+                    <div class="gunita-title">What is "Gunita"?</div>
+                    <div class="gunita-desc">The word “gunita” means memory, reminiscence, at <span class="italic">pag-alala</span>. We chose the name “Project Gunita” because one of our objectives is to help Filipino children better retain and recollect the lessons they learn in school or at home. </div>
+                    <div class="gunita-desc">Project Gunita was also meant to be a learning aid for children who were raised during the COVID-19 pandemic, where they were only familiar with digital classrooms and learning lessons through Zoom, to help them transition to traditional learning methods while still having a familiar way of learning through supplemental video-based materials.</div>
+                </div>
+                </div>
+            </div>
+            <!--<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-ef6bf03f-c8c1-4620-923d-e189a6d350d1"></div>-->
+            <div class="home2">
+                <div class ="home2-content-left">
+                    <div class="home2-content">
+                        <div class="home2-title">Our mission</div>
+                        <div class="home2-description">Our mission is to assist young Filipino learners in honing their literacy skills by providing free and accessible supplementary educational materials and a platform for safe and child-friendly learning. </div>
+                    </div> 
+                    <!--
+                    <div class="home2-content-middle">
+                        <img class ="home2-img" src="images/heart.png">
+                    </div>-->
+                </div>
+            </div>
+            <div class="home2">
+                <div class ="home2-content-right">
+                    <!--
+                    <div class="home2-content-middle">
+                        <img class ="home2-img" src="images/heart.png">
+                    </div>-->
+                    <div class="home2-content">
+                        <div class="home2-title">Our vision</div>
+                        <div class="home2-description">Our vision is to become a reliable educational platform where educators can access quality supplemental educational material for learning literacy skills. We envision a future where everyone has equal opportunities to learn, discover, and grow.</div>
+                    </div> 
+                </div>
+            </div>
+            <!--<div class="home3">
+                <div class ="home3-content">
+                    <div class ="home3-top">
+                        <div class="home3-title">Featured Videos</div>
+                    </div>
+                    <div class="home3-bottom">
+                        <div class="home3-cards-compiled">
+                            <div class="home3-card">
+                                <div class="home3-card-content">
+                                    <img class="home3-card-img" src="images/heart.png">
+                                    <div class="home3-card-title">Title</div>
+                                    <div class="home3-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                                </div>
+                            </div>
+                            <div class="home3-card">
+                                <div class="home3-card-content">
+                                    <img class="home3-card-img" src="images/heart.png">
+                                    <div class="home3-card-title">Title</div>
+                                    <div class="home3-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                                </div>
+                            </div>
+                            <div class="home3-card">
+                                <div class="home3-card-content">
+                                    <img class="home3-card-img" src="images/heart.png">
+                                    <div class="home3-card-title">Title</div>
+                                    <div class="home3-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                            </div>
+                            </div>  
+                            <div class="home3-card">
+                                <div class="home3-card-content">
+                                    <img class="home3-card-img" src="images/heart.png">
+                                    <div class="home3-card-title">Title</div>
+                                    <div class="home3-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <!--<div class="home4">
+                <div class ="home4-content">
+                    <div class="home4-top">
+                        <div class="home4-title">Teacher's Feedback</div>
+                    </div>
+                    <div class="home4-bottom">
+                        <div class="home4-cards-compiled">
+                            <div class="home4-card">
+                                <div class="home4-card-content">
+                                    <img class="home4-card-img" src="images/heart.png">
+                                    <div class="home4-card-title">Title </div>
+                                    <div class="home4-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                                </div>
+                            </div>
+                            <div class="home4-card">
+                                <div class="home4-card-content">
+                                    <img class="home4-card-img" src="images/heart.png">
+                                    <div class="home4-card-title">Title </div>
+                                    <div class="home4-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                                </div>
+                            </div>
+                            <div class="home4-card">
+                                <div class="home4-card-content">
+                                    <img class="home4-card-img" src="images/heart.png">
+                                    <div class="home4-card-title">Title </div>
+                                    <div class="home4-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elit mattis, tincidunt eros a, porta erat. Phasellus et tincidunt velit. In faucibus elit et libero laoreet finibus. Fusce vitae euismod augue. Donec rhoncus leo non tempor viverra. Nullam ligula metus, consectetur at neque eu, pretium pulvinar nunc. Proin commodo nunc finibus libero tincidunt, rutrum hendrerit neque tincidunt.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="home5">
+                <div class="home5-content">
+                    <div class="home5-left">
+                        <img class="home5-img" src="images/upload.png">
+                    </div>
+                    <div class="home5-right">
+                        <div class="home5-right-content">
+                            <div class="home5-title">Teacher's Corner</div>
+                            <div class="home5-description"> Hello po mga guro! In our Teacher&#39;s Corner, educators can share their own educational resources and learning materials about basic lessons for reading, writing, speaking and listening for young children. </div>
+                            <a class = "blue-btn" href = ugc.html class="btn-div"><img class="lightbulb" src="images/lightbulb.png">Check other resources</button></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home6">
+                <div class="home6-content">
+                    <div class="home6-left">
+                        <div class="home6-left-content">
+                            <div class="home5-title">Answer our worksheets</div>
+                            <div class="home6-description">All the worksheets on our website are easily accessible for download and even for offline usage, we have designed our platform to ensure seamless access to our worksheets for educators.</div>
+                            <!--sample button only, CHANGE CONTENT LATER-->
+                            <a class = "yellow-btn" href = worksheets.html class="btn-div"><img class="lightbulb" src="images/lightbulb.png">View printable worksheets</button></a> 
+                            <!--sample button only, CHANGE CONTENT LATER-->
+                        </div>
+                    </div>
+                    <div class="home6-right">
+                        <img class="home6-img" src="images/worksheet-mockup.png">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--ABOUT PAGE END-->
+        <!--FOOTER-->
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <ul class="footer-linklist">
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="index.html">Home</a>
+                        </li>
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="learn.html">Learn</a>
+                        </li>
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="resources.html">Resources</a>
+                        </li>
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-socialslist">
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://www.facebook.com/profile.php?id=100095610396395">
+                            <img class = "footer-socials-img" src="images/white_Facebook.svg">
+                            </a>
+                        </li>
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://www.youtube.com/channel/UCqL9e5nlO3qBzqkZl6dr-KA">
+                            <img class = "footer-socials-img" src="images/white_YouTube.svg">
+                            </a>
+                        </li>
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://www.instagram.com/projectgunita2023/?next=%2F">
+                            <img class = "footer-socials-img" src="images/white_Instagram.svg">
+                            </a>
+                        </li>
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://twitter.com/ProjectGunita">
+                            <img class = "footer-socials-img" src="images/white_Twitter.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "footer-right">
+                    <a href="index.html"><img class = "footer-logo" src ="images/logo-black.svg"></a>
+                    <div class="footer-text">
+                        <div class = "footer-right-text">© 2023 Project Gunita</div>
+                        <div class = "footer-right-text">All Rights Reserved</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER END-->
+    </body>
+</html>

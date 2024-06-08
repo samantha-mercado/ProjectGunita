@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXSNYTG5WG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FXSNYTG5WG');
+</script>
+        <meta charset="UTF-8">
+        <title>Writing</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+    </head>
+    <body>
+        <div id="preloader"></div>
+        
+            <!--nav start-->
+            <nav class="nav">
+                <a href="index.html"><img class="header-logo" src="images/logo.png"></a>
+                    <div class="nav">
+                        <ul class="navbar">
+                            <li class="nav-link">
+                                <a class = "menubutton" href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <button class="btn-drop"><a class = "menubutton now" href="learn.html"><img class="arrow" src="images/arrow.png"> Learn</button></a>
+                                    <div class="drop-content">
+                                        <a class = "drop-link" href="reading.html">Reading</a>
+                                        <a class = "drop-link" href="writing.html">Writing</a>
+                                        <a class = "drop-link" href="speaking.html">Speaking</a>
+                                        <a class = "drop-link" href="listening.html">Listening</a>
+                                    </div>
+                            </li>
+                            <li class="dropdown">
+                                <button class="btn-drop"><a class = "menubutton" href="resources.html"><img class="arrow" src="images/arrow.png">Resources</button></a>
+                                    <div class="drop-content">
+                                        <a class = "drop-link" href="videos.html">Videos</a>
+                                        <a class = "drop-link" href="worksheets.html">Worksheets</a>
+                                        <a class = "drop-link" href="ugc.html">Teacher's<br>Corner</a>
+                                    </div>
+                            </li>
+                            <li class="nav-link">
+                                <a class = "menubutton" href="contactus.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+                    </nav>
+                
+            </nav>
+
+            <div class="mobile-nav">
+                <ul class="navbar-mobile">
+                        <ul class="accordion-mobile">
+                            <li>
+                                <input type="radio" name="accordion" id="first">
+                                <label for="first"><a class="drop-link-main" href="index.html">Home</a></label>
+                            </li> 
+                            <li>
+                                <input type="radio" name="accordion-mobile" id="second">
+                                <label for="second"> <a class="drop-link-main now" href="learn.html"><img class="arrow" src="images/arrow.png"> Learn</a></label>
+                                <div class="resources-description"> 
+                                    <a class = "drop-link-accordion" href="reading.html"> Reading</a>
+                                    <a class = "drop-link-accordion" href="writing.html"> Writing</a>
+                                    <a class = "drop-link-accordion" href="speaking.html"> Speaking</a>
+                                    <a class = "drop-link-accordion" href="listening.html"> Listening</a>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="third">
+                                <label for="third"><a class="drop-link-main" href="resources.html"><img class="arrow" src="images/arrow.png"> Resources</a></label>
+                                <div class="resources-description">
+                                    <a class = "drop-link-accordion" href="videos.html"> Videos</a>
+                                    <a class = "drop-link-accordion" href="worksheets.html"> Worksheets</a>
+                                    <a class = "drop-link-accordion" href="ugc.html"> Teacher's Corner</a>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="fourth">
+                                <label for="fourth"><a class="drop-link-main" href="contactus.html">Contact Us</a></label>
+                            </li>
+                            </ul>
+                    </li>
+                
+                </ul>
+            </nav>
+
+<header class="header-learn-lesson-writing">
+            <!--nav end-->
+            <div class="landing-content-learn">
+                <div class="lesson">
+                    <div class="whole-folder">
+                        <div class="folder-top">
+                            <div class="folder-light-writing" id="kinder-btn"> 
+                                <div class="folder-content">
+                                    <img class="folder-img" src="images/writing.svg">   
+                                     <button class="btn-switchlesson" onclick="changeKinder()">Writing - Kinder </button></a> 
+                                </div>
+                            </div>
+                            <div class="folder-dark-writing" id="gr1-btn"> 
+                                <div class="folder-content"> 
+                                <img class="folder-img" src="images/writing.svg"> <button class="btn-switchlesson" onclick="changeGr1()">Writing - Grade 1</button> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folder-bottom-writing">
+                            <div class="video" id="video" ><!--put gr1 vid here-->
+                                <iframe id="kinder-video"  width="1000" height="550" src="https://www.youtube.com/embed/9Lhg-pQJ1YI?si=6uRmWDdFywPkn8nX" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-bottom"  id="video-bottom-gr1">
+                                <div class="video-bottom-content">
+                                    <div class="video-desc">
+                                        <div class="video-title"> DESCRIPTION:</div>
+                                        <div class="video-info"> Basic instructional video on how to write short sentences and phrases. </div>
+                                    </div>
+                                    <div class="video-title"> OBJECTIVES:
+                                        <ul class="video-info">
+                                            <li>To improve the students&#39; writing skills by doing writing exercises for more complex sentences and phrases
+                                            </li>
+                                            <li>Help students learn about the body&#39;s five senses as well!</li>
+                                        </ul>
+                                    </div>                                        
+                                    <div class="video-title"> INSTRUCTIONS:</div>
+                                    <div class="video-info">Be sure to download Grade 1 - Writing Worksheet before watching the video : <a class="video-btn-dl-writing" href="worksheets/gr1-writing.pdf" download="Writing Worksheet for Grade 1"><img class="resources-img-download" src="images/download.svg"><u>Click here to download!</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folder-bottom-writinggr1">
+                            <div class="video" id="video" ><!--put kinder vid here-->
+                                <iframe id="gr1-video"  width="1000" height="550" src="https://www.youtube.com/embed/5c3vAumo4Wg?si=ocaH1q5nYe2GZiIC" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-bottom" id="video-bottom-kinder">
+                                <div class="video-bottom-content">
+                                    <div class="video-desc">
+                                        <div class="video-title"> DESCRIPTION:</div>
+                                        <div class="video-info"> Basic instructional video on how to write uppercase letters of the alphabet. </div>
+                                    </div>
+                                    <div class="video-title"> OBJECTIVES:
+                                        <ul class="video-info">
+                                            <li>Students can learn and practice how to write all uppercase letters
+                                            </li>
+                                            <li>Help students improve their writing skills as well as hone their own handwriting</li>
+                                        </ul>
+                                    </div>   
+                                    <div class="video-title"> INSTRUCTIONS:</div>
+                                    <div class="video-info">Be sure to download Kinder - Writing Worksheet before watching the video : <a class="video-btn-dl-writing" href="worksheets/kinder-writing.pdf" download="Writing Worksheet for Kinder"><img class="resources-img-download" src="images/download.svg"><u>Click here to download!</u></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+            </div>
+    </header>
+    <script>
+        var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+
+        
+            const menu_btn = document.querySelector('.hamburger');
+            const mobile_menu = document.querySelector('.navbar-mobile');
+
+            menu_btn.addEventListener('click', function (){
+                menu_btn.classList.toggle('is-active');
+                mobile_menu.classList.toggle('is-active');
+
+            
+            });
+
+        window.onload = function (){
+            var x = document.getElementById("kinder-video");
+            var y = document.getElementById("gr1-video");
+            var a = document.getElementById("kinder-btn");
+            var b = document.getElementById("gr1-btn");
+            var c = document.getElementById("video-bottom-kinder");
+            var d = document.getElementById("video-bottom-gr1");
+            y.style.display = "block";
+            x.style.display = "none";
+            a.style.filter = "brightness(100%)";
+            b.style.filter = "brightness(85%)";
+            c.style.display = "block";
+            d.style.display = "none";
+        }
+        
+        
+        function changeGr1() {
+            var x = document.getElementById("kinder-video");
+            var y = document.getElementById("gr1-video");
+            var a = document.getElementById("kinder-btn");
+            var b = document.getElementById("gr1-btn");
+            var c = document.getElementById("video-bottom-kinder");
+            var d = document.getElementById("video-bottom-gr1");
+            if (x.style.display === "none" )  {
+                x.style.display = "block";
+                y.style.display = "none";
+                a.style.filter = "brightness(85%)";
+                b.style.filter = "brightness(100%)";
+                d.style.display = "block";
+            c.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "none";
+                a.style.filter = "brightness(85%)";
+                b.style.filter = "brightness(85%)";
+                c.style.display = "none";
+                d.style.display = "none";
+            }
+            }
+        
+            function changeKinder() {
+            var x = document.getElementById("kinder-video");
+            var y = document.getElementById("gr1-video");
+            var a = document.getElementById("kinder-btn");
+            var b = document.getElementById("gr1-btn");
+            var c = document.getElementById("video-bottom-kinder");
+            var d = document.getElementById("video-bottom-gr1");
+            if (y.style.display === "none" )  {
+                y.style.display = "block";
+                x.style.display = "none";
+                a.style.filter = "brightness(100%)";
+                b.style.filter = "brightness(85%)";
+                d.style.display = "none";
+            c.style.display = "block";
+            } else {
+                y.style.display = "none";
+                x.style.display = "none";
+                a.style.filter = "brightness(85%)";
+                b.style.filter = "brightness(85%)";
+                c.style.display = "none";
+                d.style.display = "none";
+            }
+            }
+        </script>
+  
+    <!--COVER PAGE-->
+    <main>
+       
+    <!---COVER PAGE END-->
+    <!--ABOUT PAGE-->
+    <div class="comments">
+    <div class="comment-submission">
+        <form action="https://formsubmit.co/projectgunita2023@gmail.com" method="POST">
+
+            <div class="comments-header">
+                <div class="comments-title">Comment Submission</div>
+                <div class="comments-subtitle">Kumusta! Got any thoughts you&#39;d like to share with us? Submit a comment below! To ensure that Project Gunita stays safe and kid-friendly, the team will review all comments first before posting on the website. Salamat! </div>
+            </div>
+            <label for="contact4-entername"></label>
+            <input type="hidden" name="_subject" value="Writing Videos">
+            <input type="text" id="contact4-entername" name="contact4-entername" placeholder="Enter name" required>
+
+            <label for="contact4-enteremail"></label>
+            <input type="text" id="contact4-enteremail" name="contact4-enteremail" placeholder="Enter email" required>
+
+            <label for="contact4-videoname"></label>
+            <input type="text" id="contact4-videoname" name="contact4-videoname" placeholder="Enter video title" required>
+
+            <label for="contact4-entertext"></label>
+            <textarea id="contact4-entertext" name="contact4-entertext"placeholder="Write your comment here!" style="height:200px" required></textarea>
+
+            <input type="submit" value="Send comment" class="contact4-submit">
+            <script>
+                document.getElementsByClassName('contact4-submit')[0].addEventListener("click", myPopupFunction);
+
+function myPopupFunction() {
+  alert('Successfully Sent!')
+}
+            </script>
+        </form>
+    </div>
+        <div class="comments-bg">
+            <div class="comments-bg-content">
+                <div class="comments-number">1 Comment</div>
+                <div class="comment-box-blue">
+                    <div class="comment-name">Gwen</div>
+                    <div class="comment-subject">Video: Writing Kinder</div>
+                    <div class="comment-approved">My little niece loves this! She told me 'I can finally practice writing over and over again! It's not as boring with my new friends to teach me.'' </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+        <!--ABOUT PAGE END-->
+        <!--FOOTER-->
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <ul class="footer-linklist">
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="index.html">Home</a>
+                        </li>
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="learn.html">Learn</a>
+                        </li>
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="resources.html">Resources</a>
+                        </li>
+                        <li class="footer-link">
+                            <a class = "footerbutton" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-socialslist">
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://www.facebook.com/profile.php?id=100095610396395">
+                            <img class = "footer-socials-img" src="images/white_Facebook.svg">
+                            </a>
+                        </li>
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://www.youtube.com/channel/UCqL9e5nlO3qBzqkZl6dr-KA">
+                            <img class = "footer-socials-img" src="images/white_YouTube.svg">
+                            </a>
+                        </li>
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://www.instagram.com/projectgunita2023/?next=%2F">
+                            <img class = "footer-socials-img" src="images/white_Instagram.svg">
+                            </a>
+                        </li>
+                        <li class="footer-socials">
+                            <a class="footer-hover" href="https://twitter.com/ProjectGunita">
+                            <img class = "footer-socials-img" src="images/white_Twitter.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "footer-right">
+                    <a href="index.html"><img class = "footer-logo" src ="images/logo-black.svg"></a>
+                    <div class="footer-text">
+                        <div class = "footer-right-text">© 2023 Project Gunita</div>
+                        <div class = "footer-right-text">All Rights Reserved</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER END-->
+    </body>
+</html>
